@@ -1,4 +1,8 @@
+import Anonncemetn from '@/components/Anonncemetn'
+import AttendanceCharts from '@/components/AttendanceCharts'
 import CountChart from '@/components/CountChats'
+import EventCalendar from '@/components/EventCalendar'
+import FinanceCharts from '@/components/FinanceCharts'
 import UserCard from '@/components/UserCard'
 import React from 'react'
 
@@ -22,16 +26,19 @@ const AdminPage = () => {
                     </div>
                     {/** Attendance CHart */}
                     <div className='w-full lg:w-2/3 h-[450px]'>
-
+                        <AttendanceCharts></AttendanceCharts>
                     </div>
                 </div>
                 {/** BOTTOM CHart */}
-                <div className=''>
-
+                <div className='w-full h-[500px]'>
+                     <FinanceCharts></FinanceCharts>
                 </div>
             </div>
             {/** RIght */}
-            <div className="w-full lg:w-1/3"></div>
+            <div className="w-full lg:w-1/3 flex flex-col gap-8">
+                <EventCalendar></EventCalendar>
+                <Anonncemetn></Anonncemetn>
+            </div>
         </div>
     )
 }
