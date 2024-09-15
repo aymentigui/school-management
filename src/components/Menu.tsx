@@ -120,7 +120,7 @@ import React from 'react'
 
 const Menu = () => {
   return (
-    <div className='mt-4 text-sm h-full overflow-scroll'>
+    <div className='mt-4 text-sm h-full'>
       {menuItems.map(i => (
         <div className='flx flex-col gap-2' key={i.title}>
           <span className='hidden lg:block text-gray-400 font-light my-4'>{i.title}</span>
@@ -129,7 +129,7 @@ const Menu = () => {
               if (item.visible.includes(role)) {
                 return (
                   <Link
-                    className='flex items-center justify-center lg:justify-start gap-4 text-gray-400 py-2 md:px-2 rounded-md hover:bg-lamaSkyLight'
+                    className='flex items-center justify-center lg:justify-start gap-4 text-gray-400 py-2 rounded-md hover:bg-lamaSkyLight'
                     key={item.label}
                     href={item.href}>
                     <Image src={item.icon} alt='' width={20} height={20} />
