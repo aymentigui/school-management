@@ -35,7 +35,7 @@ const CountChart = () => {
       {/** Title */}
       <div className='flex justify-between items-cente'>
         <h1 className='text-lg font-semibold'>Student</h1>
-        <Image src="/moreDark.png" alt='' width={20} height={20} />
+        <Image src="./moreDark.png" alt='' width={20} height={20} />
       </div>
       {/** CHART */}
       <div className='w-full h-[75%] relative'>
@@ -47,7 +47,7 @@ const CountChart = () => {
             />
           </RadialBarChart>
         </ResponsiveContainer>
-        <Image src="/maleFemale.png" alt='' width={50} height={50} className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' />
+        <Image src="./maleFemale.png" alt='' width={50} height={50} className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' />
       </div>
       {/** BOTTOM */}
       <div className='flex justify-center gap-16'>

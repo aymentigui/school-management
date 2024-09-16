@@ -68,7 +68,7 @@ const TeacherForm = ({ type, data }: { type: "create" | "update", data?: any }) 
                 </div>
                 <div className='flex flex-col items-center justify-center gap-2 w-full md:w-1/4'>
                     <label htmlFor="image-upload" className='text-xs text-gray-500 flex items-center gap-2 cursor-pointer'>
-                        <Image src="/upload.png" alt='' width={28} height={28}></Image>
+                        <Image src="./upload.png" alt='' width={28} height={28}></Image>
                         <span>Upload image</span>
                     </label>
                     <input
