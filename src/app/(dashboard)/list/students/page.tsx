@@ -44,7 +44,7 @@ const columns = [
 const StudentList = () => {
 
     const renderRow = (item: Student) => {
-        return <tr key={item.id} className='border-b- border-gray-200 even:bg-slate-50 text-sm hover:bg-lamaPurpleLight'>
+        return <tr key={item.id} className='border-b-2 border-gray-200 even:bg-slate-50 text-sm hover:bg-lamaPurpleLight'>
             <td className='flex gap-4 p-4 items-center'>
                 <Image src={item.photo} alt='' width={40} height={40} className='md:hidden xl:block w-10 rounded-full object-cover'></Image>
                 <div className='flex flex-col'>
@@ -57,7 +57,7 @@ const StudentList = () => {
             <td className='hidden lg:table-cell'>{item.phone}</td>
             <td className='hidden lg:table-cell'>{item.adresse}</td>
             <td className='flex items-center gap-2'>
-                <Link href={"list/techers/" + item.id}>
+                <Link href={"/list/students/" + item.id}>
                     <button className='w-7 h-7 flex justify-center items-center rounded-full bg-lamaSky'>
                         <Image src="/view.png" alt='' width={16} height={16}></Image>
                     </button>
