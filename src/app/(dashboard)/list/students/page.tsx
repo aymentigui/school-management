@@ -56,7 +56,8 @@ const StudentList = () => {
             <td className='hidden md:table-cell'>{item.grade}</td>
             <td className='hidden lg:table-cell'>{item.phone}</td>
             <td className='hidden lg:table-cell'>{item.adresse}</td>
-            <td className='flex items-center gap-2'>
+            <td>
+                <div className='flex items-center gap-2'>
                 <Link href={"/list/students/" + item.id}>
                     <button className='w-7 h-7 flex justify-center items-center rounded-full bg-lamaSky'>
                         <Image src="/view.png" alt='' width={16} height={16}></Image>
@@ -66,6 +67,7 @@ const StudentList = () => {
                     role === "admin" &&
                     <FormModal table='student' type='delete' id={item.id}></FormModal>
                 }
+                </div>
             </td>
         </tr>
     }

@@ -48,7 +48,8 @@ const EventList = () => {
                 <td className='hidden md:table-cell'>{item.date}</td>
                 <td className='hidden md:table-cell'>{item.startTime}</td>
                 <td className='hidden md:table-cell'>{item.endTime}</td>
-                <td className='flex items-center gap-2'>
+                <td>
+                    <div className='flex items-center gap-2'>
                     {
                         role === "admin" &&
                         <>
@@ -56,6 +57,7 @@ const EventList = () => {
                             <FormModal table='event' type='update' id={item.id}></FormModal>
                         </>
                     }
+                    </div>
                 </td>
             </tr>)
     }

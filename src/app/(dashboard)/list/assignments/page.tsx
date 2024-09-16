@@ -42,7 +42,8 @@ const AssignmentList = () => {
             <td >{item.class}</td>
             <td className='hidden md:table-cell'>{item.teacher}</td>
             <td className='hidden md:table-cell'>{item.dueDate}</td>
-            <td className='flex items-center gap-2'>
+            <td>
+                <div className='flex items-center gap-2'>
                 {
                     role === "admin" &&
                     <>
@@ -50,6 +51,7 @@ const AssignmentList = () => {
                         <FormModal table='assignment' type='update' id={item.id}></FormModal>
                     </>
                 }
+                </div>
             </td>
         </tr>
     }

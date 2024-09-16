@@ -48,7 +48,8 @@ const ParenttList = () => {
             <td className='hidden md:table-cell'>{item.students.join(", ")}</td>
             <td className='hidden md:table-cell'>{item.phone}</td>
             <td className='hidden lg:table-cell'>{item.adresse}</td>
-            <td className='flex items-center gap-2'>
+            <td>
+                <div className='flex items-center gap-2'>                    
                 {
                     role === "admin" &&
                     <>
@@ -56,6 +57,7 @@ const ParenttList = () => {
                         <FormModal table='parent' type='update' id={item.id}></FormModal>
                     </>
                 }
+                </div>
             </td>
         </tr>
     }

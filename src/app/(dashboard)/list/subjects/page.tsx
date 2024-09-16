@@ -34,7 +34,8 @@ const SubjectList = () => {
             {item.name}
             </td>
             <td className='hidden md:table-cell'>{item.teachers.join(", ")}</td>
-            <td className='flex items-center gap-2'>
+            <td >
+                <div className='flex items-center gap-2'>                    
                 {
                     role === "admin" &&
                     <>
@@ -42,6 +43,7 @@ const SubjectList = () => {
                         <FormModal table='subject' type='update' id={item.id}></FormModal>
                     </>
                 }
+                </div>
             </td>
         </tr>
     }
