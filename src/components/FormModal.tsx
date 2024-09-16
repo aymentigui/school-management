@@ -6,8 +6,8 @@ import React, { useState } from 'react'
 /* import TeacherForm from './forms/TeacherForm'
 import StudentForm from './forms/StudentForn' */
 
-const TeacherForm= dynamic(()=>import("./forms/TeacherForm"), {loading:()=> <h1>loading ....</h1>})
-const StudentForm= dynamic(()=>import("./forms/StudentForn"), {loading:()=> <h1>loading ....</h1>})
+const TeacherForm= dynamic(()=>import('./Form/TeacherForm'), {loading:()=> <h1>loading ....</h1>})
+const StudentForn= dynamic(()=>import("./Form/StudentForn"), {loading:()=> <h1>loading ....</h1>})
 
 const FormModal = ({ table, type, data, id }:
     {
@@ -20,7 +20,7 @@ const FormModal = ({ table, type, data, id }:
     const [open, setOpen] = useState(false)
     const forms:{[key:string]:(type : "create"| "update", data?:any)=>JSX.Element}={
         teacher:(type,data)=> <TeacherForm type={type} data={data}></TeacherForm>,
-        student:(type,data)=> <StudentForm type={type} data={data}></StudentForm>
+        student:(type,data)=> <StudentForn type={type} data={data}></StudentForn>
     }
 
     const size = type === "create" ? "w-8 h-8" : "w-7 h-7"
@@ -49,7 +49,7 @@ const FormModal = ({ table, type, data, id }:
                     <div className='relative w-[90%] md:w-[70%] lg:w-[60%] xl:w-[50%] 2xl:w-[40%]  bg-white rounded-md p-4'>
                         {Form()}
                         <div onClick={()=>setOpen(false)} className='absolute top-4 right-4 cursor-pointer'>
-                            <Image src="./close.png" alt='' width={14} height={14}></Image>
+                            <Image src="/close.png" alt='' width={14} height={14}></Image>
                         </div>
                     </div>
                 </div>

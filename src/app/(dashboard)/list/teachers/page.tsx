@@ -63,7 +63,7 @@ const TeacherList = () => {
       <td className='flex items-center gap-2'>
         <Link href={"list/techers/" + item.id}>
           <button className='w-7 h-7 flex justify-center items-center rounded-full bg-lamaSky'>
-            <Image src="./view.png" alt='' width={16} height={16}></Image>
+            <Image src="/view.png" alt='' width={16} height={16}></Image>
           </button>
         </Link>
         {
@@ -83,10 +83,10 @@ const TeacherList = () => {
           <TableSearch></TableSearch>
           <div className='flex items-center gap-4 slef-end'>
             <button className='w-8 h-8 flex items-center justify-center rounded-full bg-lamaYellow'>
-              <Image src="./filter.png" alt='' width={14} height={14}></Image>
+              <Image src="/filter.png" alt='' width={14} height={14}></Image>
             </button>
             <button className='w-8 h-8 flex items-center justify-center rounded-full bg-lamaYellow'>
-              <Image src="./sort.png" alt='' width={14} height={14}></Image>
+              <Image src="/sort.png" alt='' width={14} height={14}></Image>
             </button>
             {
               role === "admin" &&

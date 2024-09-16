@@ -69,10 +69,10 @@ const EventList = () => {
                     <TableSearch></TableSearch>
                     <div className='flex items-center gap-4 slef-end'>
                         <button className='w-8 h-8 flex items-center justify-center rounded-full bg-lamaYellow'>
-                            <Image src="./filter.png" alt='' width={14} height={14}></Image>
+                            <Image src="/filter.png" alt='' width={14} height={14}></Image>
                         </button>
                         <button className='w-8 h-8 flex items-center justify-center rounded-full bg-lamaYellow'>
-                            <Image src="./sort.png" alt='' width={14} height={14}></Image>
+                            <Image src="/sort.png" alt='' width={14} height={14}></Image>
                         </button>
                         {
                             role === "admin" &&
