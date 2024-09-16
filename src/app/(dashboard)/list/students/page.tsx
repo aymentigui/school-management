@@ -54,8 +54,8 @@ const StudentList = () => {
             </td>
             <td className='hidden md:table-cell'>{item.studentId}</td>
             <td className='hidden md:table-cell'>{item.grade}</td>
-            <td className='hidden md:table-cell'>{item.phone}</td>
-            <td className='hidden md:table-cell'>{item.adresse}</td>
+            <td className='hidden lg:table-cell'>{item.phone}</td>
+            <td className='hidden lg:table-cell'>{item.adresse}</td>
             <td className='flex items-center gap-2'>
                 <Link href={"list/techers/" + item.id}>
                     <button className='w-7 h-7 flex justify-center items-center rounded-full bg-lamaSky'>

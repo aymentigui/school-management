@@ -47,7 +47,7 @@ const ParenttList = () => {
             </td>
             <td className='hidden md:table-cell'>{item.students.join(", ")}</td>
             <td className='hidden md:table-cell'>{item.phone}</td>
-            <td className='hidden md:table-cell'>{item.adresse}</td>
+            <td className='hidden lg:table-cell'>{item.adresse}</td>
             <td className='flex items-center gap-2'>
                 {
                     role === "admin" &&
