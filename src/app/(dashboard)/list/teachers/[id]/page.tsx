@@ -100,7 +100,7 @@ const SungleTeacherPage = () => {
                 </div>
                 {/* BOTTOM */}
                 <div className='mt-4 bg-white rounded-md p-4 h-[80%]'>
-                    <h1 className='font-semibold text-xl'>Teacher's Schedule</h1>
+                    <h1 className='font-semibold text-xl'>Teacher s Schedule</h1>
                     <BigCalendar></BigCalendar>
                 </div>
             </div>
@@ -109,11 +109,11 @@ const SungleTeacherPage = () => {
                 <div className='bg-white rounded-md p-4'>
                     <h1 className='text-xl font-semibold'>Shortcuts</h1>
                     <div className='mt-4 flex gap-4 flex-wrap text-xs text-blue-700'>
-                        <Link className='p-3 rounded-md bg-lamaSky' href="/" >Teacher's classes</Link>
-                        <Link className='p-3 rounded-md bg-lamaPurple' href="/" >Teacher's Students</Link>
-                        <Link className='p-3 rounded-md bg-lamaYellow' href="/" >Teacher's exams</Link>
-                        <Link className='p-3 rounded-md bg-lamaSkyLight' href="/" >Teacher's Lessons</Link>
-                        <Link className='p-3 rounded-md bg-lamaPurpleLight  ' href="/" >Teacher's Assignments</Link>
+                        <Link className='p-3 rounded-md bg-lamaSky' href="/" >Teacher s classes</Link>
+                        <Link className='p-3 rounded-md bg-lamaPurple' href="/" >Teacher s Students</Link>
+                        <Link className='p-3 rounded-md bg-lamaYellow' href="/" >Teacher s exams</Link>
+                        <Link className='p-3 rounded-md bg-lamaSkyLight' href="/" >Teacher s Lessons</Link>
+                        <Link className='p-3 rounded-md bg-lamaPurpleLight  ' href="/" >Teacher s Assignments</Link>
                     </div>
                 </div>
                 <PerformanceChat></PerformanceChat>
